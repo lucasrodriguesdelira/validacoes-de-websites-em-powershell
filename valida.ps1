@@ -67,7 +67,7 @@ if($null -ne $result){
                 <TR align='center'>
                     <TD> $($Entry.uri) </TD>
                     <TD> $($Entry.StatusCode) </TD>
-                    <TD bgcolor=red><FONT COLOR=white title='$msg'> INVALID SITE </TD>
+                    <TD bgcolor=yellow><span title='$msg'> INVALID SITE </span></TD>
                     <TD> N/A </TD>
                     <TD> N/A </TD>
                     <TD> $($Entry.date) </TD>
