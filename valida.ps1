@@ -30,7 +30,14 @@ if($null -ne $result){
     <head>
         <meta charset='UTF-8'>
         <title> MIDDLEWARE | WEBSITES </title>
+        <style type='text/css'></style>
     </head>
+    <style>  
+    td {
+        border: 2px solid #ccc;
+        border-radius: 5px;
+    }
+    </style>
     <body align='center'>
         <font size='5' face='Tahoma, Verdana, Arial, Helvetica, sans-serif' color='red'>
             <h3> WEBSITES CHECKLIST </h3>
