@@ -45,7 +45,12 @@ if($null -ne $result){
                     <TD><FONT COLOR=white> DATA </TD>
                 </TR>"
     Foreach($Entry in $Result) {
-        if($Entry.StatusCode -eq 200 -or $Entry.StatusCode -eq 401 -or $Entry.StatusCode -eq 403){
+        if(
+            $Entry.StatusCode -eq 200 -or
+            $Entry.StatusCode -eq 401 -or
+            $Entry.StatusCode -eq 403
+        )
+        {
             $Outputreport += "
                 <TR align='center'>
                     <TD> $($Entry.uri) </TD>
