@@ -1,7 +1,7 @@
 $URLListFile = "sites.txt"  
 $URLList = Get-Content $URLListFile -ErrorAction SilentlyContinue 
 $Result = @()
-$msg = Write-Output "O site está incorreto.`nOu`nÉ impossível acessá-lo."
+$msg = Write-Output "O site está incorreto.`n                ou`nÉ impossível acessá-lo."
 Foreach($Uri in $URLList) {
     $data = Get-Date -Format "dd/MM/yyyy HH:mm:ss"
 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::tls12
