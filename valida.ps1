@@ -1,6 +1,7 @@
 $URLListFile = "sites.txt"  
 $URLList = Get-Content $URLListFile -ErrorAction SilentlyContinue 
 $Result = @()
+$msg = Write-Output "O site está incorreto.`nOu`nÉ impossível acessá-lo."
 Foreach($Uri in $URLList) {
     $data = Get-Date -Format "dd/MM/yyyy HH:mm:ss"
 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::tls12
@@ -66,9 +67,9 @@ if($null -ne $result){
                 <TR align='center'>
                     <TD> $($Entry.uri) </TD>
                     <TD> $($Entry.StatusCode) </TD>
-                    <TD bgcolor=red><FONT COLOR=white title='O site esta incorreto ou eh impossivel acessa-lo!!!'> INVALID SITE </TD>
-                    <TD> $($Entry.ResponseLength) </TD>
-                    <TD> $($Entry.timetaken) </TD>
+                    <TD bgcolor=red><FONT COLOR=white title='$msg'> INVALID SITE </TD>
+                    <TD> N/A </TD>
+                    <TD> N/A </TD>
                     <TD> $($Entry.date) </TD>
                 </TR>"
         }
