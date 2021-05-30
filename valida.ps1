@@ -66,10 +66,10 @@ if($null -ne $result){
             $Outputreport += "
                 <TR align='center'>
                     <TD> $($Entry.uri) </TD>
-                    <TD> $($Entry.StatusCode) </TD>
+                    <TD> ---- </TD>
                     <TD bgcolor=yellow><span title='$msg'> Invalid </span></TD>
-                    <TD> N/A </TD>
-                    <TD> N/A </TD>
+                    <TD> ---- </TD>
+                    <TD> ---- </TD>
                     <TD> $($Entry.date) </TD>
                 </TR>"
         }
@@ -79,8 +79,8 @@ if($null -ne $result){
                     <TD> $($Entry.uri) </TD>
                     <TD> $($Entry.StatusCode) </TD>
                     <TD bgcolor=red><FONT COLOR=white> $($Entry.StatusDescription) </TD>
-                    <TD> N/A </TD>
-                    <TD> N/A </TD>
+                    <TD> ---- </TD>
+                    <TD> ---- </TD>
                     <TD> $($Entry.date) </TD>
                 </TR>"
         }
